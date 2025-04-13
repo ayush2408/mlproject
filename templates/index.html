@@ -1,1 +1,78 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Exam Performance - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #f0f4f8;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.95rem;
+            text-align: center;
+            color: #2c3e50;
+            border-top: 1px solid #ccc;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Exam Performance App</h1>
+        <p class="tagline">Predict a student's math performance based on various features.</p>
+        <a href="{{ url_for('predict_datapoint') }}" class="btn btn-custom">Go to Prediction Form</a>
+    </div>
+
+    <footer>
+        Developed by: <strong>Ayush Pandey</strong> |
+        Email: <a href="mailto:ayushpandey24aug@gmail.com">ayushpandey24aug@gmail.com</a> |
+        LinkedIn: <a href="https://linkedin.com/in/ayush-p-7194b5131" target="_blank">ayush-p-7194b5131</a>
+    </footer>
+</body>
+</html>
